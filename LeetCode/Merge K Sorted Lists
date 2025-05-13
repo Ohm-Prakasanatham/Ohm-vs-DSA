@@ -1,58 +1,40 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
-class Solution {
-public:
-    // Function to merge two sorted linked lists
-    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
-        if (!l1) return l2;
-        if (!l2) return l1;
+/*
+🧠 Problem: **Two Sum** (LeetCode #1)
+🔗 Link: https://leetcode.com/problems/two-sum/
+📂 Category: Arrays
 
-        ListNode* dummy = new ListNode(0); // Dummy node to simplify merging
-        ListNode* temp = dummy;
+💡 Approach:
+- Use a **hash map** to track the difference between target and current number.
+- Return **indices** if the complement is found.
 
-        // Merge the two lists by comparing node values
-        while (l1 && l2) {
-            if (l1->val < l2->val) {
-                temp->next = l1;
-                l1 = l1->next;
-            } else {
-                temp->next = l2;
-                l2 = l2->next;
-            }
-            temp = temp->next;
+🕒 Time Complexity: O(n)
+🧠 Space Complexity: O(n)
+*/
+
+// 🔥 Include necessary libraries
+#include <iostream>
+#include <unordered_map>
+#include <vector>
+using namespace std;
+
+// ✨ Function to find two numbers that add up to target
+vector<int> twoSum(vector<int>& nums, int target) {
+    unordered_map<int, int> hashMap;  // 🔑 Stores numbers and their indices
+    for (int i = 0; i < nums.size(); ++i) {
+        int complement = target - nums[i];  // 🧩 Find the complement
+        if (hashMap.find(complement) != hashMap.end()) {
+            return {hashMap[complement], i};  // ✅ Found the solution
         }
-
-        // Attach the remaining non-empty list
-        if (l1) {
-            temp->next = l1;
-        } else {
-            temp->next = l2;
-        }
-
-        return dummy->next; // Return the merged list
+        hashMap[nums[i]] = i;  // 📍 Store number with its index
     }
+    return {}; // ❌ No solution found
+}
 
-    // Function to merge K sorted linked lists using Divide and Conquer
-    ListNode* mergeKLists(vector<ListNode*>& lists) {
-        if (lists.empty()) return nullptr; // Edge case: No lists
-
-        int n = lists.size();
-        while (n > 1) {
-            int newSize = (n + 1) / 2; // Calculate new number of lists after merging
-            for (int i = 0; i < n / 2; i++) {
-                lists[i] = mergeTwoLists(lists[i], lists[i + (n + 1) / 2]);
-            }
-            n = newSize; // Update the size
-        }
-
-        return lists[0]; // Final merged list
-    }
-};
+// 🎯 Main function to test the solution
+int main() {
+    vector<int> nums = {2, 7, 11, 15};
+    int target = 9;
+    vector<int> result = twoSum(nums, target);
+    cout << "Indices: " << result[0] << ", " << result[1] << endl;  // 🚀 Output result
+    return 0;
+}
