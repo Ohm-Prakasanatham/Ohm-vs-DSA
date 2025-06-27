@@ -53,7 +53,7 @@ Let’s connect, collaborate, and grow together:
 ---
 
 > 💥 **Logic. Patterns. Persistence.**  
-> 👊 *This is not just code — this is my journey to mastery.*
+> 👊 *To learn code, just code.*
 
 ---
 
