@@ -45,10 +45,10 @@ Because:
 
 Let’s connect, collaborate, and grow together:
 
-- 📝 **Medium:** [Your Medium Link Here](https://codewithohm.medium.com/)
-- 💼 **LinkedIn:** [Your LinkedIn Link Here](https://www.linkedin.com/in/ohm-prakasanatham-85b643213)
-- 📸 **Instagram:** [Your Instagram Link Here](www.instagram.com/ohmprakasanatham)
-- 🐦 **Twitter:** [Your Twitter Link Here](https://x.com/codewithohm)
+- 📝 **Medium:** [codewithohm](https://codewithohm.medium.com/)
+- 💼 **LinkedIn:** [Ohm Prakasanatham](https://www.linkedin.com/in/ohm-prakasanatham-85b643213)
+- 📸 **Instagram:** [ohmprakasanatham](www.instagram.com/ohmprakasanatham)
+- 🐦 **Twitter:** [codewithohm](https://x.com/codewithohm)
 
 ---
 
