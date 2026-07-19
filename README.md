@@ -1,6 +1,6 @@
 # 🚀 Ohm vs DSA
 
-Welcome to **Ohm vs DSA** – my personal battleground against Data Structures & Algorithms challenges and A small corner of the internet where LeetCode solutions are collected, explored, and shared.
+Welcome to **Ohm vs DSA** : My personal battleground against Data Structures & Algorithms challenges and A small corner of the internet where LeetCode solutions are collected, explored, and shared.
 
 ## 💡 **About This Repository**
 This repository is a collection of my problem-solving journey through Data Structures and Algorithms.
