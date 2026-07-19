@@ -21,17 +21,9 @@ Every problem starts with confusion.
 Then comes curiosity.
 Then understanding.
 And finally, a solution.
-This repository captures that process — one problem, one solution, and one improvement at a time.
+This repository captures that process.
 
 ---
-
-## 🎯 **Why This Repo Exists**
-
-Because:
-- I'm **building up my DSA muscle 💪** for interviews and life.  
-- I believe in **consistent daily progress 🔁**.  
-- **Learning in public** keeps me accountable 🌍.  
-- You might find your next **breakthrough pattern 🔓** here.
 
 ## ✨ **Connect with Me**
 
